@@ -8,22 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		2669F0C723BF912E001413BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0C623BF912E001413BB /* AppDelegate.swift */; };
-		2669F0C923BF912E001413BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0C823BF912E001413BB /* SceneDelegate.swift */; };
-		2669F0CB23BF912E001413BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0CA23BF912E001413BB /* ViewController.swift */; };
-		2669F0CE23BF912E001413BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0CC23BF912E001413BB /* Main.storyboard */; };
 		2669F0D023BF9131001413BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0CF23BF9131001413BB /* Assets.xcassets */; };
 		2669F0D323BF9131001413BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0D123BF9131001413BB /* LaunchScreen.storyboard */; };
+		2669F0DC23BF9166001413BB /* PeopleLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0DA23BF9166001413BB /* PeopleLoaderVC.swift */; };
+		2669F0DD23BF9166001413BB /* PeopleLoaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0DB23BF9166001413BB /* PeopleLoaderVC.xib */; };
+		2669F0E023BF972F001413BB /* NetworkErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0DE23BF972F001413BB /* NetworkErrorVC.swift */; };
+		2669F0E123BF972F001413BB /* NetworkErrorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0DF23BF972F001413BB /* NetworkErrorVC.xib */; };
+		2669F0E423BF9740001413BB /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0E223BF9740001413BB /* LoadingVC.swift */; };
+		2669F0E523BF9740001413BB /* LoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0E323BF9740001413BB /* LoadingVC.xib */; };
+		2669F0EC23BFA083001413BB /* EmptyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0EA23BFA082001413BB /* EmptyVC.swift */; };
+		2669F0ED23BFA083001413BB /* EmptyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0EB23BFA082001413BB /* EmptyVC.xib */; };
+		2669F0EF23BFA20F001413BB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0EE23BFA20F001413BB /* UIViewController+Extensions.swift */; };
+		2669F0F123BFA2E3001413BB /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0F023BFA2E3001413BB /* PersonAPI.swift */; };
+		2669F0F323BFA2F1001413BB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0F223BFA2F1001413BB /* Person.swift */; };
+		2669F0F623BFB5E7001413BB /* PersonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0F423BFB5E7001413BB /* PersonDetailVC.swift */; };
+		2669F0F723BFB5E7001413BB /* PersonDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0F523BFB5E7001413BB /* PersonDetailVC.xib */; };
+		2669F0FA23BFB761001413BB /* LongTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0F823BFB761001413BB /* LongTextVC.swift */; };
+		2669F0FB23BFB761001413BB /* LongTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0F923BFB761001413BB /* LongTextVC.xib */; };
+		2669F0FE23BFB7CF001413BB /* CircleImageWithLabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F0FC23BFB7CF001413BB /* CircleImageWithLabelVC.swift */; };
+		2669F0FF23BFB7CF001413BB /* CircleImageWithLabelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F0FD23BFB7CF001413BB /* CircleImageWithLabelVC.xib */; };
+		2669F10323BFC7C0001413BB /* PeopleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F10123BFC7C0001413BB /* PeopleTVC.swift */; };
+		2669F10423BFC7C0001413BB /* PeopleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F10223BFC7C0001413BB /* PeopleTVC.xib */; };
+		2669F10E23BFCABA001413BB /* PersonDetailLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F10C23BFCABA001413BB /* PersonDetailLoaderVC.swift */; };
+		2669F10F23BFCABA001413BB /* PersonDetailLoaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2669F10D23BFCABA001413BB /* PersonDetailLoaderVC.xib */; };
+		2669F11B23C10761001413BB /* PersonBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669F11A23C10761001413BB /* PersonBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2669F0C323BF912E001413BB /* ChildVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2669F0C623BF912E001413BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2669F0C823BF912E001413BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2669F0CA23BF912E001413BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2669F0CD23BF912E001413BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2669F0CF23BF9131001413BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2669F0D223BF9131001413BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2669F0D423BF9131001413BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2669F0DA23BF9166001413BB /* PeopleLoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleLoaderVC.swift; sourceTree = "<group>"; };
+		2669F0DB23BF9166001413BB /* PeopleLoaderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleLoaderVC.xib; sourceTree = "<group>"; };
+		2669F0DE23BF972F001413BB /* NetworkErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorVC.swift; sourceTree = "<group>"; };
+		2669F0DF23BF972F001413BB /* NetworkErrorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkErrorVC.xib; sourceTree = "<group>"; };
+		2669F0E223BF9740001413BB /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		2669F0E323BF9740001413BB /* LoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingVC.xib; sourceTree = "<group>"; };
+		2669F0EA23BFA082001413BB /* EmptyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyVC.swift; sourceTree = "<group>"; };
+		2669F0EB23BFA082001413BB /* EmptyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyVC.xib; sourceTree = "<group>"; };
+		2669F0EE23BFA20F001413BB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2669F0F023BFA2E3001413BB /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
+		2669F0F223BFA2F1001413BB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2669F0F423BFB5E7001413BB /* PersonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailVC.swift; sourceTree = "<group>"; };
+		2669F0F523BFB5E7001413BB /* PersonDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailVC.xib; sourceTree = "<group>"; };
+		2669F0F823BFB761001413BB /* LongTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTextVC.swift; sourceTree = "<group>"; };
+		2669F0F923BFB761001413BB /* LongTextVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LongTextVC.xib; sourceTree = "<group>"; };
+		2669F0FC23BFB7CF001413BB /* CircleImageWithLabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageWithLabelVC.swift; sourceTree = "<group>"; };
+		2669F0FD23BFB7CF001413BB /* CircleImageWithLabelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleImageWithLabelVC.xib; sourceTree = "<group>"; };
+		2669F10123BFC7C0001413BB /* PeopleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTVC.swift; sourceTree = "<group>"; };
+		2669F10223BFC7C0001413BB /* PeopleTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleTVC.xib; sourceTree = "<group>"; };
+		2669F10C23BFCABA001413BB /* PersonDetailLoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailLoaderVC.swift; sourceTree = "<group>"; };
+		2669F10D23BFCABA001413BB /* PersonDetailLoaderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailLoaderVC.xib; sourceTree = "<group>"; };
+		2669F11A23C10761001413BB /* PersonBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBasic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +95,97 @@
 			isa = PBXGroup;
 			children = (
 				2669F0C623BF912E001413BB /* AppDelegate.swift */,
-				2669F0C823BF912E001413BB /* SceneDelegate.swift */,
-				2669F0CA23BF912E001413BB /* ViewController.swift */,
-				2669F0CC23BF912E001413BB /* Main.storyboard */,
+				2669F10923BFCA4A001413BB /* View Controllers */,
+				2669F10723BFCA2B001413BB /* Model */,
+				2669F10823BFCA32001413BB /* Extensions */,
 				2669F0CF23BF9131001413BB /* Assets.xcassets */,
 				2669F0D123BF9131001413BB /* LaunchScreen.storyboard */,
 				2669F0D423BF9131001413BB /* Info.plist */,
 			);
 			path = ChildVC;
+			sourceTree = "<group>";
+		};
+		2669F10523BFCA1C001413BB /* Person Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2669F10C23BFCABA001413BB /* PersonDetailLoaderVC.swift */,
+				2669F10D23BFCABA001413BB /* PersonDetailLoaderVC.xib */,
+				2669F0F423BFB5E7001413BB /* PersonDetailVC.swift */,
+				2669F0F523BFB5E7001413BB /* PersonDetailVC.xib */,
+			);
+			path = "Person Detail";
+			sourceTree = "<group>";
+		};
+		2669F10623BFCA24001413BB /* People List */ = {
+			isa = PBXGroup;
+			children = (
+				2669F0DA23BF9166001413BB /* PeopleLoaderVC.swift */,
+				2669F0DB23BF9166001413BB /* PeopleLoaderVC.xib */,
+				2669F10123BFC7C0001413BB /* PeopleTVC.swift */,
+				2669F10223BFC7C0001413BB /* PeopleTVC.xib */,
+			);
+			path = "People List";
+			sourceTree = "<group>";
+		};
+		2669F10723BFCA2B001413BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2669F0F023BFA2E3001413BB /* PersonAPI.swift */,
+				2669F0F223BFA2F1001413BB /* Person.swift */,
+				2669F11A23C10761001413BB /* PersonBasic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2669F10823BFCA32001413BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2669F0EE23BFA20F001413BB /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2669F10923BFCA4A001413BB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2669F10623BFCA24001413BB /* People List */,
+				2669F10523BFCA1C001413BB /* Person Detail */,
+				2669F11023BFCB43001413BB /* Reusable */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2669F11023BFCB43001413BB /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				2669F11223BFEA5A001413BB /* Content Widgets */,
+				2669F11123BFE8B7001413BB /* State Templates */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		2669F11123BFE8B7001413BB /* State Templates */ = {
+			isa = PBXGroup;
+			children = (
+				2669F0EA23BFA082001413BB /* EmptyVC.swift */,
+				2669F0EB23BFA082001413BB /* EmptyVC.xib */,
+				2669F0E223BF9740001413BB /* LoadingVC.swift */,
+				2669F0E323BF9740001413BB /* LoadingVC.xib */,
+				2669F0DE23BF972F001413BB /* NetworkErrorVC.swift */,
+				2669F0DF23BF972F001413BB /* NetworkErrorVC.xib */,
+			);
+			path = "State Templates";
+			sourceTree = "<group>";
+		};
+		2669F11223BFEA5A001413BB /* Content Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				2669F0FC23BFB7CF001413BB /* CircleImageWithLabelVC.swift */,
+				2669F0FD23BFB7CF001413BB /* CircleImageWithLabelVC.xib */,
+				2669F0F823BFB761001413BB /* LongTextVC.swift */,
+				2669F0F923BFB761001413BB /* LongTextVC.xib */,
+			);
+			path = "Content Widgets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +246,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2669F0E523BF9740001413BB /* LoadingVC.xib in Resources */,
+				2669F0FF23BFB7CF001413BB /* CircleImageWithLabelVC.xib in Resources */,
+				2669F0E123BF972F001413BB /* NetworkErrorVC.xib in Resources */,
+				2669F10423BFC7C0001413BB /* PeopleTVC.xib in Resources */,
 				2669F0D323BF9131001413BB /* LaunchScreen.storyboard in Resources */,
+				2669F0DD23BF9166001413BB /* PeopleLoaderVC.xib in Resources */,
+				2669F0FB23BFB761001413BB /* LongTextVC.xib in Resources */,
+				2669F0ED23BFA083001413BB /* EmptyVC.xib in Resources */,
+				2669F0F723BFB5E7001413BB /* PersonDetailVC.xib in Resources */,
+				2669F10F23BFCABA001413BB /* PersonDetailLoaderVC.xib in Resources */,
 				2669F0D023BF9131001413BB /* Assets.xcassets in Resources */,
-				2669F0CE23BF912E001413BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +267,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2669F0CB23BF912E001413BB /* ViewController.swift in Sources */,
+				2669F0F623BFB5E7001413BB /* PersonDetailVC.swift in Sources */,
+				2669F10323BFC7C0001413BB /* PeopleTVC.swift in Sources */,
+				2669F0DC23BF9166001413BB /* PeopleLoaderVC.swift in Sources */,
+				2669F0E423BF9740001413BB /* LoadingVC.swift in Sources */,
+				2669F0E023BF972F001413BB /* NetworkErrorVC.swift in Sources */,
+				2669F0F123BFA2E3001413BB /* PersonAPI.swift in Sources */,
+				2669F0EF23BFA20F001413BB /* UIViewController+Extensions.swift in Sources */,
+				2669F11B23C10761001413BB /* PersonBasic.swift in Sources */,
+				2669F0FA23BFB761001413BB /* LongTextVC.swift in Sources */,
+				2669F10E23BFCABA001413BB /* PersonDetailLoaderVC.swift in Sources */,
+				2669F0F323BFA2F1001413BB /* Person.swift in Sources */,
+				2669F0EC23BFA083001413BB /* EmptyVC.swift in Sources */,
 				2669F0C723BF912E001413BB /* AppDelegate.swift in Sources */,
-				2669F0C923BF912E001413BB /* SceneDelegate.swift in Sources */,
+				2669F0FE23BFB7CF001413BB /* CircleImageWithLabelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2669F0CC23BF912E001413BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2669F0CD23BF912E001413BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2669F0D123BF9131001413BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
