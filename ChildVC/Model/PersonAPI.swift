@@ -8,9 +8,9 @@
 
 import Foundation
 
-class PersonAPI {
+final class PersonAPI {
     
-    static func getPeople(callback: @escaping (Result<[Person], ErrorMessage>) -> ()) {
+    static func getPeople(callback: @escaping (Result<[PersonBasic], ErrorMessage>) -> ()) {
         let delay = TimeInterval.random(in: 0.5...2)
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             callback(.success(mockData))

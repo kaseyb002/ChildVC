@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NetworkErrorVC: UIViewController {
+final class NetworkErrorVC: UIViewController {
 
     // MARK: Required inits for Xibs
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}

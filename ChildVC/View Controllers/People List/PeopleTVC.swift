@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PeopleTVC: UITableViewController {
+final class PeopleTVC: UITableViewController {
     
     // MARK: Required inits for Xibs
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}

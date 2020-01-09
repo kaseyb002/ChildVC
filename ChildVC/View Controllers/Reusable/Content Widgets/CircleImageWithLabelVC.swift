@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CircleImageWithLabelVC: UIViewController {
+final class CircleImageWithLabelVC: UIViewController {
     
     // MARK: Required inits for Xibs
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}

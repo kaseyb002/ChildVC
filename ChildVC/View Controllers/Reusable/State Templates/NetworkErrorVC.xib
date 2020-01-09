@@ -18,24 +18,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HGD-Bg-bjt">
-                    <rect key="frame" x="115" y="380.5" width="184" height="145.5"/>
+                    <rect key="frame" x="122.5" y="380.5" width="169.5" height="145.5"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7D9-J2-Hbg">
-                            <rect key="frame" x="54.5" y="0.5" width="75" height="73"/>
+                            <rect key="frame" x="47" y="0.5" width="75" height="73"/>
                             <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="75" id="fJU-t5-cQM"/>
                                 <constraint firstAttribute="height" constant="75" id="kpw-yl-lOs"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network error occurred." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nza-4j-qnk">
-                            <rect key="frame" x="0.0" y="85" width="184" height="20.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server error occurred." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nza-4j-qnk">
+                            <rect key="frame" x="0.0" y="85" width="169.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-mN-JHx">
-                            <rect key="frame" x="73.5" y="115.5" width="37" height="30"/>
+                            <rect key="frame" x="66" y="115.5" width="37" height="30"/>
                             <state key="normal" title="Retry"/>
                             <connections>
                                 <action selector="retryButtonPressed:" destination="-1" eventType="touchUpInside" id="gvq-Kt-Aqb"/>

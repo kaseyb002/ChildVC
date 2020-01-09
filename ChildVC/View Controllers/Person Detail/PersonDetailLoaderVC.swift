@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonDetailLoaderVC: UIViewController {
+final class PersonDetailLoaderVC: UIViewController {
     
     // MARK: Required inits for Xibs
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}

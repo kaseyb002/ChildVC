@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LongTextVC: UIViewController {
+final class LongTextVC: UIViewController {
     
     // MARK: Required inits for Xibs
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) missing")}
