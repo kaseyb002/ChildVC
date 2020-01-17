@@ -84,17 +84,23 @@ extension PersonDetailLoaderVC {
     }
     
     private func presentStateSelector() {
-        let alert = UIAlertController(title: "Select State", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Select State",
+                                      message: nil,
+                                      preferredStyle: .alert)
         alert.addAction(.init(title: "Success", style: .default) { _ in
             self.loadPerson()
         })
         alert.addAction(.init(title: "Error", style: .default) { _ in
-            self.state = .loading
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                self.state = .error
-            }
+            self.mockErrorState()
         })
         present(alert, animated: true, completion: nil)
+    }
+    
+    private func mockErrorState() {
+        state = .loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.state = .error
+        }
     }
 }
 

@@ -97,23 +97,33 @@ extension PeopleLoaderVC {
     }
     
     private func presentStateSelector() {
-        let alert = UIAlertController(title: "Select State", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Select State",
+                                      message: nil,
+                                      preferredStyle: .alert)
         alert.addAction(.init(title: "Success", style: .default) { _ in
             self.loadPeople()
         })
         alert.addAction(.init(title: "Empty", style: .default) { _ in
-            self.state = .loading
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                self.state = .empty
-            }
+            self.mockEmptyState()
         })
         alert.addAction(.init(title: "Error", style: .default) { _ in
-            self.state = .loading
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                self.state = .error
-            }
+            self.mockErrorState()
         })
         present(alert, animated: true, completion: nil)
+    }
+    
+    private func mockErrorState() {
+        state = .loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.state = .error
+        }
+    }
+    
+    private func mockEmptyState() {
+        state = .loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.state = .empty
+        }
     }
 }
 
