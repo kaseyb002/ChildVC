@@ -70,15 +70,20 @@ extension PeopleLoaderVC {
         PersonAPI.getPeople { [weak self] result in
             switch result {
             case .success(let people):
-                guard !people.isEmpty else {
-                    self?.state = .empty
-                    return
-                }
-                self?.state = .loaded(people)
+                self?.updateState(with: people)
             case .failure:
                 self?.state = .error
             }
         }
+    }
+    
+    private func updateState(with people: [PersonBasic]) {
+        if people.isEmpty {
+            state = .empty
+            return
+        }
+        
+        state = .loaded(people)
     }
 }
 
@@ -104,25 +109,18 @@ extension PeopleLoaderVC {
             self.loadPeople()
         })
         alert.addAction(.init(title: "Empty", style: .default) { _ in
-            self.mockEmptyState()
+            self.mock(state: .empty)
         })
         alert.addAction(.init(title: "Error", style: .default) { _ in
-            self.mockErrorState()
+            self.mock(state: .error)
         })
         present(alert, animated: true, completion: nil)
     }
     
-    private func mockErrorState() {
-        state = .loading
+    private func mock(state: State) {
+        self.state = .loading
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.state = .error
-        }
-    }
-    
-    private func mockEmptyState() {
-        state = .loading
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.state = .empty
+            self.state = state
         }
     }
 }

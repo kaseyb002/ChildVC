@@ -91,15 +91,15 @@ extension PersonDetailLoaderVC {
             self.loadPerson()
         })
         alert.addAction(.init(title: "Error", style: .default) { _ in
-            self.mockErrorState()
+            self.mock(state: .error)
         })
         present(alert, animated: true, completion: nil)
     }
     
-    private func mockErrorState() {
-        state = .loading
+    private func mock(state: State) {
+        self.state = .loading
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.state = .error
+            self.state = state
         }
     }
 }
